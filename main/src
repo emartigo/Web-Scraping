@@ -20,7 +20,7 @@ def queryPrices( queryURL, paramsValues,headersValues,elementList,date2Filter ):
     paramsValues['fecha']=date2Filter
     response= requests.post(queryURL, data = paramsValues, headers=headersValues)
     soup = BeautifulSoup(response.text,"html.parser")
-    table=soup.find('table',{'border':'1'});//Identificación de la tabla que contiene los datos a almacenar
+    table=soup.find('table',{'border':'1'});#Identificación de la tabla que contiene los datos a almacenar
     currentIndex=0
     for row in table.findAll("tr"):
         cells = row.findAll('td')
