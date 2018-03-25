@@ -1,0 +1,16 @@
+---
+title: "Dataset: Precio de los cereales en la lonja de salamanca"
+author: "Esther Martín González"
+date: "30 de Marzo de 2018"
+header-includes:
+  - \usepackage[spanish]{babel}
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Descripción
+
+
